@@ -1,8 +1,7 @@
+import Home from './components/pages/Home'
 function App() {
   return (
-    <div>
-      this is react app!
-    </div>
+    <Home></Home>
   );
 }
 
