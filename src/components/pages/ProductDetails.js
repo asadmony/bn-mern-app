@@ -1,7 +1,8 @@
 import React from 'react'
 
 export default function ProductDetails(props) {
-    const {product} = props
+    console.log(props);
+    const product = props.match.params.id
     return (
         <div>
             product details {product}
