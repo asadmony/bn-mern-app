@@ -2,7 +2,7 @@ const data = {
     products: [
         {
             id: 1,
-            name: 'ab',
+            name: 'abssdsa',
         },
         {
             id: 2,
