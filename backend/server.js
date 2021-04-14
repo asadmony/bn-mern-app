@@ -1,7 +1,16 @@
 import express from 'express';
+import mongoose from 'mongoose'
 import data from './data.js'
+import userRouter from './routers/userRouter'
 
 const app = express();
+mongoose.connect('mongodb://localhost/barakanoor_test', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+});
+
+app.use('/api/users', userRouter)
 
 app.get('/api/product/:id', (req, res)=>{
     const product = data.products.find( (x) => x.id == req.params.id)
